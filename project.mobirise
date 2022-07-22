@@ -1,0 +1,151 @@
+{
+  "settings": {
+    "name": "zerion exchange",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/zerion.png",
+    "mbrsiteDomain": "zj9q2dz7hy",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Zerion : Web3 Wallet With NFT And Defi Portfolio.",
+        "meta_descr": "Zerion Wallet is a smart wallet app for all your crypto wallets. Track your crypto portfolio with a built-in NFT wallet and DeFi tracker.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/zerion-io.png\" alt=\"Zerion Exchange\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tcjK8hwi2e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image3-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><a href=\"https://zerion-exchange.github.io\" class=\"text-primary\"><b>Zerion Exchange</b></a></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the past blog entry, I gave some verifiable setting around the groundwork of big business asset arranging (ERP) programming, how ERPs have advanced after some time, and the difficulties of refreshing ERP programming to fit the world we presently live in. At the finish of that blog entry, I expressed that I'd framework and rate the four UIs inside the Eclipse ERP programming that I accept are (a) basic, and (b) not performing up to the norms I might want to find on the lookout, which I frame here.\n<br>\n<br> (1) Inventory Planning: <a href=\"https://zerion-exchange.github.io\" class=\"text-primary\">Zerion Exchange</a> Inventory arranging is at the core of what we do. Obscure incorporated the Economic Order Quantity (EOQ), which is a basic equation representing a thing's interest, cost, and the expense of holding a thing to decide the best amount of a thing to reorder. While this is a strong approach to coming to a projection, I feel utilizing only one recipe is restricting. Some other outsider programming would have an assortment of buying equations to consider. Numerous choices even venture to such an extreme as to examine what could be better for a specific SKU. What's more, most programming choices have the capacity to comprehend the actual size of the space accessible for stockpiling, which is a really significant figure buying choices. In Eclipse, that component is horribly missing. In conclusion, the Eclipse equation doesn't address how much item that homegrown wholesalers are buying from abroad. Consequently, the component of exactly how much item can squeeze into a compartment boat and make it into your distribution center is essentially not represented. Assuming I were developing an ERP framework from the beginning, guarantee the interest arranging part of that program consolidated the amount to arrange, an imagine a scenario where examination, area aspects, and holder transport limits. From my perspective, those are presently large holes to fill inside the Eclipse ERP programming.\n<br>\n<br>Zerion's Rating of Eclipse buying capability (when contrasted with what's free in the more extensive commercial center): 5\n<br>(2) eCommerce: Harking back to the point I made in the previous blog entry in regards to the Internet blasting out of the doors long after the Eclipse ERP programming had been composed, clearly clients - and as a rule, the actual wholesalers - are focusing on the speed and effectiveness of web based requesting nowadays. This has likely never been more apparent than in the hours of COVID-19, as we watch the prominence of stages like Shopify, BigCommerce, and Amazon - also stock costs - affirm the enormous business of eCommerce. Overshadow misses the mark in bringing the intel that is accessible to counter representatives to a more extensive base of distant workers for hire who need to know when and where something is free, and they need to know it now. Contemplate how the 'experience' of web based shopping inside Eclipse looks at to locales like Home Depot, Lowe's, Grainger, and Amazon. There is actually no examination. And keeping in mind that Eclipse has some eCommerce devices that have been coordinated into the product after some time, what's accessible has clearly been sorted out, making for a burdensome encounter. Tragically, inconvenient doesn't assist us with rivaling the Amazons of the world.\n<br>Zerion's Rating of Eclipse eCommerce capability (when contrasted with what's free in the more extensive commercial center): 2\n<br>(3) Warehousing: Eclipse both succeeds and misses the mark in the warehousing field. I have by and by been finishing RF establishments for Eclipse wholesalers for north of 18 years, so I have a very decent handle on the capacities and limits of the product. Optimistically, Eclipse can deal with numerous areas for some things, giving a lot of adaptability to 'have' these areas. Overshadow even permits clients to move things from one area to another. Overshadow makes a fair showing with paper warehousing and gives a strong choice to remote usefulness for most of clients. (Side note: If you have the valuable chance to go from paper to RF inside Eclipse, make it happen. It's definitely justified. A decent round number to financial plan for is roughly $3,500 per distribution center client to cover RF gadgets, programming, and counseling work for the coordination.) Flipping to the negative side, be that as it may, Eclipse clients have no capacity to mass-load new areas nor do they can deal with the genuine size of the actual space at every area. Moreover, Eclipse offers clients very nearly zero announcing abilities out-of-the-case for those areas, and there are sadly no ways for clients to upgrade areas by rank or speed. With everything taken into account, Eclipse monitors areas genuinely well, however with regards to allowing clients to deal with their areas after some time, the product is simply not where it should be. The best component of the warehousing capability inside Eclipse is that the product coordinates all that you really want to improve yourself and comparable to the opposition… IF you have taken the action to RF.\n<br> <a href=\"https://zerion-exchange.github.io\" class=\"text-primary\">Zerion Exchange</a> Rating of Eclipse warehousing capability (when contrasted with what's free in the more extensive commercial center): 7\n<br>(4) Reporting: I surrender that Eclipse has put forth a courageous attempt to give better detailing over the long run; nonetheless, the revealing capability in Eclipse - all in all - is disconnected and doesn't represent individual division needs. How about we plunge further into the announcing choices:\n<br>Provides details regarding the Main Menu - These are nonexclusive, not entirely adjustable, dated and not thorough.\n<br>Report Writer/Eclipse Reports - These reports will more often than not be awkward and specialized and are for the most part not for the average client. I'd venture to such an extreme as to say they are obsolete and really inconsequential to the ongoing specialized local area. Obscure offers almost no documentation to assist clients with figuring out how to handle these reports. Notwithstanding, these reports truly do expand a portion of the standard reports well, when a client gets some margin to sort out some way to utilize these. These reports give the choice to mass-load into the Eclipse data set also.\n<br>Outsider Reporting - These Users in all actuality do have a few extraordinary choices in such manner like Phocas (which - to Eclipse clients - is currently Epicor BI). Clients likewise have MITS as a choice, and even kore Technologies, which works effectively at repeating the multi-esteem information into SQL.\n<br>\n<br>So why has the Eclipse detailing capability made this 'best four' list? Once more the detailing capabilities inside Eclipse are not local; they were not an essential layer incorporated into Eclipse all along. And keeping in mind that there are a few in number choices, coordinating these revealing capabilities means additional work outside and away from Eclipse. Clients really need an outsider past how Eclipse can locally help detailing. (Also, this doesn't address the unquestionably unfortunate general record <a href=\"https://zerion-exchange.github.io\" class=\"text-primary\">Zerion Exchange</a> and monetary detailing inside Eclipse… goodness my!).\n<br>Zerion's Rating of Eclipse revealing capability (when contrasted with what's free in the more extensive commercial center): Taking the Eclipse detailing capability all alone, 4. In any case, with outsider detailing - like Phocas - coordinated into Eclipse: 8.\n<br>To finish up, as I have been saying for a long while, there are a few serious constraints inside the Eclipse ERP programming in light of the fact that the underpinning of the product was fabricated such a long time ago. While there have been endeavors at patches and reconciliations to make it more easy to use after some time, the fundamental design of Eclipse is as yet trapped during the 90s, leaving clients in a difficult situation.\n<br>\n<br>I don't know there will at any point be a contender to enter the scene that will do all that the Eclipse client base necessities a product stage to do at an expense that takes any action beneficial, yet if I somehow happened to compose the ideal programming stage in our space, it would better record for the four UIs recorded previously. A person can dream, isn't that so?</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tcjK97UYHD",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header2-1"
+        }
+      ]
+    }
+  }
+}
